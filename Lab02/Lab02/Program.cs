@@ -4,6 +4,7 @@ using Lab01.Heros;
 using Lab02.Creatures;
 using Lab02.Hero.FriendlyHero;
 using Lab02.Decorators;
+using Lab02.Map;
 
 namespace Lab01
 {
@@ -81,6 +82,18 @@ namespace Lab01
 
                 Console.WriteLine(personage.Name);
 
+
+
+                string nameOfMap = "Пустыня";
+                Map map = new Map(nameOfMap);
+
+                map.Draw();
+
+                map.AddComponent(myHero);
+
+                IComponent component = map.Find("Main Hero");
+
+                Console.WriteLine(component.Title);
 
 
 

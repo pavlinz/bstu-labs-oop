@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Text;
 using Lab02.Creatures;
+using Lab02.Map;
 
 namespace Lab01.Heros
 {
-    public class Hero : IHero
+    public class Hero : IHero, IComponent
     {
         public Armor armor { get; set; }
         public Weapon weapon { get; set; }
         public Profession profession { get; set; }
+        public string Title { get; set; } = "Main Hero";
 
         public void Move(ICreatures creatures)
         {
@@ -40,6 +42,13 @@ namespace Lab01.Heros
             if (profession != null)
                 sb.Append(profession.profession + "\n");
             return sb.ToString();
+        }
+
+        public void Draw(){}
+
+        public IComponent Find(string title)
+        {
+            return null;
         }
     }
 }
