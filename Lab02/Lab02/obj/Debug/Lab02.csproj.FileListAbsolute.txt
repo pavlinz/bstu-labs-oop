@@ -1,0 +1,7 @@
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\bin\Debug\Lab02.exe.config
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\bin\Debug\Lab02.exe
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\bin\Debug\Lab02.pdb
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\obj\Debug\Lab02.csprojAssemblyReference.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\obj\Debug\Lab02.exe
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab02\Lab02\obj\Debug\Lab02.pdb
