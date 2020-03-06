@@ -1,5 +1,4 @@
-﻿using System;
-using Lab01.Heros;
+﻿using Lab01.Heros;
 
 namespace Lab03.State
 {
@@ -7,7 +6,10 @@ namespace Lab03.State
     {
         public void HandleInput(Hero hero, char symb)
         {
-            hero.ChangeState(new RunningState());
+            if (symb == 'w')
+                hero.ChangeState(new RunningState());
+            if (symb == 'q')
+                hero.ChangeState(new JumpingState());
         }
 
         public override string ToString()

@@ -3,6 +3,7 @@ using System.Text;
 using Lab02.Creatures;
 using Lab02.Map;
 using Lab03.State;
+using Lab03.Memento;
 
 namespace Lab01.Heros
 {
@@ -40,6 +41,21 @@ namespace Lab01.Heros
         public void Jump()
         {
             Console.WriteLine("Прыжок");
+        }
+
+        public HeroMemento SaveState()
+        {
+            Console.WriteLine("Сохранение игры. Параметры: {0}, {1}, {2}, {3}", armor, weapon, profession, _state);
+            return new HeroMemento(armor, weapon, profession, _state);
+        }
+
+        public void RestoreState(HeroMemento memento)
+        {
+            this.armor = memento.armor;
+            this.weapon = memento.weapon;
+            this.profession = memento.profession;
+            this._state = memento.state;
+            Console.WriteLine("Восстановление игры. Параметры: {0}, {1}, {2}, {3}", armor, weapon, profession, _state);
         }
 
         public IHero Clone()

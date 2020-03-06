@@ -9,5 +9,11 @@ namespace Lab01.Heros
     public class Weapon
     {
         public string TypeOfWeapon { get; set; }
+
+
+        public override string ToString()
+        {
+            return TypeOfWeapon;
+        }
     }
 }

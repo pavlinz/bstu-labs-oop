@@ -9,5 +9,10 @@ namespace Lab01.Heros
     public class Profession
     {
         public string profession { get; set; }
+
+        public override string ToString()
+        {
+            return profession;
+        }
     }
 }

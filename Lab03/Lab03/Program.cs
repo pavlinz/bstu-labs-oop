@@ -7,6 +7,7 @@ using Lab02.Decorators;
 using Lab02.Map;
 using Lab03.Commands;
 using Lab03.State;
+using Lab03.Memento;
 
 namespace Lab01
 {
@@ -98,7 +99,9 @@ namespace Lab01
                 Console.WriteLine(component.Title);
                 Console.WriteLine();
 
-                // Lab03
+                // Lab03 start here
+
+                GameHistory game = new GameHistory();
 
                 Command jumpCommand = new JumpCommand(myHero);
                 Command runCommand = new RunCommand(myHero);
@@ -117,9 +120,15 @@ namespace Lab01
                         runCommand.Execute();
                         myHero.HandleInput(Symbol);
                     }
+                    else if(Symbol == 's')
+                    {
+                        game.History.Push(myHero.SaveState());
+                    }
                     else
                         break;
                 }
+
+                myHero.RestoreState(game.History.Pop());
 
                 Console.ReadLine();
             }
