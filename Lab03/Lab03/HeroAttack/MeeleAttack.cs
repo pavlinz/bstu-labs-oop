@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab03.HeroAttack
 {
-    class MeeleAttack
+    public class MeeleAttack : IAttack
     {
+        public void Attack()
+        {
+            Console.WriteLine("Ближняя атака");
+        }
     }
 }

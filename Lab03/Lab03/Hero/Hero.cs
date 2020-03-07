@@ -4,18 +4,25 @@ using Lab02.Creatures;
 using Lab02.Map;
 using Lab03.State;
 using Lab03.Memento;
+using Lab03.HeroAttack;
 
 namespace Lab01.Heros
 {
 
-    public class Hero : IHero, IComponent
+    public class Hero : IHero, IComponent, IAttack
     {
         private HeroState _state;
+        public IAttack attack { get; set; } = new MeeleAttack();
 
         public Armor armor { get; set; }
         public Weapon weapon { get; set; }
         public Profession profession { get; set; }
         public string Title { get; set; } = "Main Hero";
+
+        public void Attack()
+        {
+            attack.Attack();
+        }
 
         public void HandleInput(char symbol)
         {

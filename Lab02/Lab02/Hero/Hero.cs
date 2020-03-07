@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using Lab02.Creatures;
 using Lab02.Map;
 

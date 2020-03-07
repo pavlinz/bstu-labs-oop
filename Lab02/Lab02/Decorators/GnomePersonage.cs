@@ -8,6 +8,6 @@ namespace Lab02.Decorators
 {
     public class GnomePersonage : Personage
     {
-        public GnomePersonage() : base("Гном Гимли") { }
+        public GnomePersonage() : base("Гном") { }
     }
 }

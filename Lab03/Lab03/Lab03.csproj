@@ -65,6 +65,9 @@
     <Compile Include="Factories\EnemyFactory.cs" />
     <Compile Include="Factories\EquestrianEnemyFactory.cs" />
     <Compile Include="Factories\FootEnemyFactory.cs" />
+    <Compile Include="HeroAttack\IAttack.cs" />
+    <Compile Include="HeroAttack\MeeleAttack.cs" />
+    <Compile Include="HeroAttack\RangedAttack.cs" />
     <Compile Include="Hero\Director.cs" />
     <Compile Include="Hero\ElfHeroBuilder.cs" />
     <Compile Include="Hero\FriendlyHero\Ally.cs" />

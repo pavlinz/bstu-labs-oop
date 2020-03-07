@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab03.HeroAttack
 {
-    class RangedAttack
+    public class RangedAttack : IAttack
     {
+        public void Attack()
+        {
+            Console.WriteLine("Дальняя атака");
+        }
     }
 }

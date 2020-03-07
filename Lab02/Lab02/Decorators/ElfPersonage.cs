@@ -8,6 +8,6 @@ namespace Lab02.Decorators
 {
     public class ElfPersonage : Personage
     {
-        public ElfPersonage() : base("Эльф Леголас") {}
+        public ElfPersonage() : base("Эльф") {}
     }
 }

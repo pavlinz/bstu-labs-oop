@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab03.HeroAttack
 {
-    interface IAttack
+    public interface IAttack
     {
+        void Attack();
     }
 }
