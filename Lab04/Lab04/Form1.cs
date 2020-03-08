@@ -147,8 +147,6 @@ namespace Lab04
         {
             try
             {
-
-
                 if (Flags.SIN && Flags.NUM)
                 {
                     string value = this.MainTextBox.Text;
@@ -205,16 +203,6 @@ namespace Lab04
 
                     this.MainTextBox.Text += Math.Sqrt(Double.Parse(value));
                 }
-                else if (Flags.RAD && Flags.NUM)
-                {
-                    string value = this.MainTextBox.Text;
-
-                    value = value.Remove(0, 1);
-
-                    this.MainTextBox.Clear();
-
-                    this.MainTextBox.Text += Math.Sqrt(Double.Parse(value));
-                }
                 else
                 {
                     this.MainTextBox.Clear();
@@ -225,6 +213,43 @@ namespace Lab04
             {
                 this.MainTextBox.Text = ex.Message;
             }
+        }
+
+        private void saveValue_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double value;
+                if (this.MainTextBox.Text != String.Empty)
+                {
+                    value = Double.Parse(this.MainTextBox.Text);
+                    Keeper.AddValue(value);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.MainTextBox.Text = ex.Message;
+            }
+        }
+
+        private void clearMemory_Click(object sender, EventArgs e)
+        {
+            Keeper.ClearMemory();
+        }
+
+        private void addValue_Click(object sender, EventArgs e)
+        {
+            if(Keeper.TakeValue() == 0)
+            {
+                this.MainTextBox.Clear();
+                this.MainTextBox.Text = "Добавьте значение в память";
+            }
+            else
+            {
+                this.MainTextBox.Text += Convert.ToString(Keeper.TakeValue());
+                Flags.NUM = true;
+            }
+            
         }
     }
 }

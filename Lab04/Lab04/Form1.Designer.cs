@@ -50,6 +50,9 @@
             this.ySquare = new System.Windows.Forms.Button();
             this.leftBracket = new System.Windows.Forms.Button();
             this.rightBracket = new System.Windows.Forms.Button();
+            this.saveValue = new System.Windows.Forms.Button();
+            this.clearMemory = new System.Windows.Forms.Button();
+            this.addValue = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +96,7 @@
             this.tableLayoutPanel1.Controls.Add(this.ySquare, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.leftBracket, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.rightBracket, 2, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 92);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 120);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -101,7 +104,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(448, 375);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(448, 347);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // num1
@@ -144,7 +147,7 @@
             // 
             this.num4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num4.Location = new System.Drawing.Point(3, 78);
+            this.num4.Location = new System.Drawing.Point(3, 72);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(106, 40);
             this.num4.TabIndex = 3;
@@ -156,7 +159,7 @@
             // 
             this.num5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num5.Location = new System.Drawing.Point(115, 78);
+            this.num5.Location = new System.Drawing.Point(115, 72);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(106, 40);
             this.num5.TabIndex = 4;
@@ -168,7 +171,7 @@
             // 
             this.num6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num6.Location = new System.Drawing.Point(227, 78);
+            this.num6.Location = new System.Drawing.Point(227, 72);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(106, 40);
             this.num6.TabIndex = 5;
@@ -180,7 +183,7 @@
             // 
             this.num7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num7.Location = new System.Drawing.Point(3, 153);
+            this.num7.Location = new System.Drawing.Point(3, 141);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(106, 40);
             this.num7.TabIndex = 6;
@@ -192,7 +195,7 @@
             // 
             this.num8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num8.Location = new System.Drawing.Point(115, 153);
+            this.num8.Location = new System.Drawing.Point(115, 141);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(106, 40);
             this.num8.TabIndex = 7;
@@ -204,7 +207,7 @@
             // 
             this.num9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num9.Location = new System.Drawing.Point(227, 153);
+            this.num9.Location = new System.Drawing.Point(227, 141);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(106, 40);
             this.num9.TabIndex = 8;
@@ -216,7 +219,7 @@
             // 
             this.num0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.num0.Location = new System.Drawing.Point(115, 228);
+            this.num0.Location = new System.Drawing.Point(115, 210);
             this.num0.Name = "num0";
             this.num0.Size = new System.Drawing.Size(106, 40);
             this.num0.TabIndex = 9;
@@ -240,7 +243,7 @@
             // 
             this.equal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.equal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.equal.Location = new System.Drawing.Point(339, 78);
+            this.equal.Location = new System.Drawing.Point(339, 72);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(106, 40);
             this.equal.TabIndex = 13;
@@ -252,7 +255,7 @@
             // 
             this.sinButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sinButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sinButton.Location = new System.Drawing.Point(339, 153);
+            this.sinButton.Location = new System.Drawing.Point(339, 141);
             this.sinButton.Name = "sinButton";
             this.sinButton.Size = new System.Drawing.Size(106, 40);
             this.sinButton.TabIndex = 14;
@@ -264,7 +267,7 @@
             // 
             this.cosButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cosButton.Location = new System.Drawing.Point(339, 228);
+            this.cosButton.Location = new System.Drawing.Point(339, 210);
             this.cosButton.Name = "cosButton";
             this.cosButton.Size = new System.Drawing.Size(106, 40);
             this.cosButton.TabIndex = 15;
@@ -276,7 +279,7 @@
             // 
             this.tanButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tanButton.Location = new System.Drawing.Point(339, 303);
+            this.tanButton.Location = new System.Drawing.Point(339, 279);
             this.tanButton.Name = "tanButton";
             this.tanButton.Size = new System.Drawing.Size(106, 40);
             this.tanButton.TabIndex = 16;
@@ -288,7 +291,7 @@
             // 
             this.radical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radical.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radical.Location = new System.Drawing.Point(3, 303);
+            this.radical.Location = new System.Drawing.Point(3, 279);
             this.radical.Name = "radical";
             this.radical.Size = new System.Drawing.Size(106, 40);
             this.radical.TabIndex = 10;
@@ -300,7 +303,7 @@
             // 
             this.point.Cursor = System.Windows.Forms.Cursors.Hand;
             this.point.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.point.Location = new System.Drawing.Point(227, 303);
+            this.point.Location = new System.Drawing.Point(227, 279);
             this.point.Name = "point";
             this.point.Size = new System.Drawing.Size(106, 40);
             this.point.TabIndex = 17;
@@ -312,7 +315,7 @@
             // 
             this.ySquare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ySquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ySquare.Location = new System.Drawing.Point(115, 303);
+            this.ySquare.Location = new System.Drawing.Point(115, 279);
             this.ySquare.Name = "ySquare";
             this.ySquare.Size = new System.Drawing.Size(106, 40);
             this.ySquare.TabIndex = 18;
@@ -324,7 +327,7 @@
             // 
             this.leftBracket.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leftBracket.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.leftBracket.Location = new System.Drawing.Point(3, 228);
+            this.leftBracket.Location = new System.Drawing.Point(3, 210);
             this.leftBracket.Name = "leftBracket";
             this.leftBracket.Size = new System.Drawing.Size(106, 40);
             this.leftBracket.TabIndex = 19;
@@ -336,7 +339,7 @@
             // 
             this.rightBracket.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rightBracket.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rightBracket.Location = new System.Drawing.Point(227, 228);
+            this.rightBracket.Location = new System.Drawing.Point(227, 210);
             this.rightBracket.Name = "rightBracket";
             this.rightBracket.Size = new System.Drawing.Size(106, 40);
             this.rightBracket.TabIndex = 20;
@@ -344,11 +347,47 @@
             this.rightBracket.UseVisualStyleBackColor = true;
             this.rightBracket.Click += new System.EventHandler(this.rightBracket_Click);
             // 
+            // saveValue
+            // 
+            this.saveValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveValue.Location = new System.Drawing.Point(365, 74);
+            this.saveValue.Name = "saveValue";
+            this.saveValue.Size = new System.Drawing.Size(80, 40);
+            this.saveValue.TabIndex = 2;
+            this.saveValue.Text = "MS";
+            this.saveValue.UseVisualStyleBackColor = true;
+            this.saveValue.Click += new System.EventHandler(this.saveValue_Click);
+            // 
+            // clearMemory
+            // 
+            this.clearMemory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearMemory.Location = new System.Drawing.Point(253, 74);
+            this.clearMemory.Name = "clearMemory";
+            this.clearMemory.Size = new System.Drawing.Size(80, 40);
+            this.clearMemory.TabIndex = 3;
+            this.clearMemory.Text = "MC";
+            this.clearMemory.UseVisualStyleBackColor = true;
+            this.clearMemory.Click += new System.EventHandler(this.clearMemory_Click);
+            // 
+            // addValue
+            // 
+            this.addValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addValue.Location = new System.Drawing.Point(138, 74);
+            this.addValue.Name = "addValue";
+            this.addValue.Size = new System.Drawing.Size(80, 40);
+            this.addValue.TabIndex = 4;
+            this.addValue.Text = "MR";
+            this.addValue.UseVisualStyleBackColor = true;
+            this.addValue.Click += new System.EventHandler(this.addValue_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 479);
+            this.Controls.Add(this.addValue);
+            this.Controls.Add(this.clearMemory);
+            this.Controls.Add(this.saveValue);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.MainTextBox);
             this.Name = "MainForm";
@@ -383,6 +422,9 @@
         private System.Windows.Forms.Button ySquare;
         private System.Windows.Forms.Button leftBracket;
         private System.Windows.Forms.Button rightBracket;
+        private System.Windows.Forms.Button saveValue;
+        private System.Windows.Forms.Button clearMemory;
+        private System.Windows.Forms.Button addValue;
     }
 }
 
