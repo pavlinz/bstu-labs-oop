@@ -1,6 +1,6 @@
 ﻿namespace Lab05
 {
-    partial class Form1
+    partial class accountForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -31,16 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.accNumberField = new System.Windows.Forms.TextBox();
             this.groupBox = new System.Windows.Forms.GroupBox();
-            this.a = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.multiply = new System.Windows.Forms.RadioButton();
+            this.manager = new System.Windows.Forms.RadioButton();
+            this.saver = new System.Windows.Forms.RadioButton();
             this.trackBalance = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.trackValue = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkSms = new System.Windows.Forms.CheckBox();
+            this.addData = new System.Windows.Forms.Button();
+            this.outputData = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.jsonSaver = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBalance)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +65,13 @@
             this.accNumberField.Name = "accNumberField";
             this.accNumberField.Size = new System.Drawing.Size(202, 20);
             this.accNumberField.TabIndex = 1;
+            this.accNumberField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.accNumberField_KeyPress);
             // 
             // groupBox
             // 
-            this.groupBox.Controls.Add(this.radioButton3);
-            this.groupBox.Controls.Add(this.radioButton2);
-            this.groupBox.Controls.Add(this.a);
+            this.groupBox.Controls.Add(this.multiply);
+            this.groupBox.Controls.Add(this.manager);
+            this.groupBox.Controls.Add(this.saver);
             this.groupBox.Location = new System.Drawing.Point(15, 72);
             this.groupBox.Name = "groupBox";
             this.groupBox.Size = new System.Drawing.Size(202, 100);
@@ -75,38 +79,38 @@
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Тип вклада";
             // 
-            // a
+            // multiply
             // 
-            this.a.AutoSize = true;
-            this.a.Location = new System.Drawing.Point(7, 20);
-            this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(153, 17);
-            this.a.TabIndex = 0;
-            this.a.TabStop = true;
-            this.a.Text = "безотзывной \"Сохраняй\"";
-            this.a.UseVisualStyleBackColor = true;
+            this.multiply.AutoSize = true;
+            this.multiply.Location = new System.Drawing.Point(7, 68);
+            this.multiply.Name = "multiply";
+            this.multiply.Size = new System.Drawing.Size(152, 17);
+            this.multiply.TabIndex = 2;
+            this.multiply.TabStop = true;
+            this.multiply.Text = "отзывной \"Приумножай\"";
+            this.multiply.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // manager
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 45);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(137, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "отзывной \"Управляй\"";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.manager.AutoSize = true;
+            this.manager.Location = new System.Drawing.Point(7, 45);
+            this.manager.Name = "manager";
+            this.manager.Size = new System.Drawing.Size(137, 17);
+            this.manager.TabIndex = 1;
+            this.manager.TabStop = true;
+            this.manager.Text = "отзывной \"Управляй\"";
+            this.manager.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // saver
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 68);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(152, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "отзывной \"Приумножай\"";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.saver.AutoSize = true;
+            this.saver.Location = new System.Drawing.Point(7, 20);
+            this.saver.Name = "saver";
+            this.saver.Size = new System.Drawing.Size(153, 17);
+            this.saver.TabIndex = 0;
+            this.saver.TabStop = true;
+            this.saver.Text = "безотзывной \"Сохраняй\"";
+            this.saver.UseVisualStyleBackColor = true;
             // 
             // trackBalance
             // 
@@ -126,14 +130,14 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Баланс:";
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 298);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 3, 9, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 3, 9, 0, 0, 0, 0);
+            this.dateTimePicker.Location = new System.Drawing.Point(12, 298);
+            this.dateTimePicker.MaxDate = new System.DateTime(2020, 3, 9, 0, 0, 0, 0);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(202, 20);
+            this.dateTimePicker.TabIndex = 5;
+            this.dateTimePicker.Value = new System.DateTime(2020, 3, 9, 0, 0, 0, 0);
             // 
             // trackValue
             // 
@@ -153,41 +157,72 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Дополнительные возможности:";
             // 
-            // checkBox1
+            // checkSms
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(22, 390);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Смс оповещение";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkSms.AutoSize = true;
+            this.checkSms.Location = new System.Drawing.Point(22, 390);
+            this.checkSms.Name = "checkSms";
+            this.checkSms.Size = new System.Drawing.Size(113, 17);
+            this.checkSms.TabIndex = 8;
+            this.checkSms.Text = "Смс оповещение";
+            this.checkSms.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // addData
             // 
-            this.button1.Location = new System.Drawing.Point(12, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 43);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addData.Location = new System.Drawing.Point(12, 451);
+            this.addData.Name = "addData";
+            this.addData.Size = new System.Drawing.Size(202, 43);
+            this.addData.TabIndex = 9;
+            this.addData.Text = "Добавить";
+            this.addData.UseVisualStyleBackColor = true;
+            this.addData.Click += new System.EventHandler(this.addData_Click);
             // 
-            // Form1
+            // outputData
+            // 
+            this.outputData.Location = new System.Drawing.Point(305, 29);
+            this.outputData.Name = "outputData";
+            this.outputData.Size = new System.Drawing.Size(274, 465);
+            this.outputData.TabIndex = 10;
+            this.outputData.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 282);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Дата создания счета:";
+            // 
+            // jsonSaver
+            // 
+            this.jsonSaver.Location = new System.Drawing.Point(339, 500);
+            this.jsonSaver.Name = "jsonSaver";
+            this.jsonSaver.Size = new System.Drawing.Size(202, 23);
+            this.jsonSaver.TabIndex = 12;
+            this.jsonSaver.Text = "Сохранение инфорации в JSON";
+            this.jsonSaver.UseVisualStyleBackColor = true;
+            this.jsonSaver.Click += new System.EventHandler(this.jsonSaver_Click);
+            // 
+            // accountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.jsonSaver);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.outputData);
+            this.Controls.Add(this.addData);
+            this.Controls.Add(this.checkSms);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.trackValue);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBalance);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.accNumberField);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "accountForm";
             this.Text = "Счет";
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
@@ -202,16 +237,19 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox accNumberField;
         private System.Windows.Forms.GroupBox groupBox;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton a;
+        private System.Windows.Forms.RadioButton multiply;
+        private System.Windows.Forms.RadioButton manager;
+        private System.Windows.Forms.RadioButton saver;
         private System.Windows.Forms.TrackBar trackBalance;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label trackValue;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkSms;
+        private System.Windows.Forms.Button addData;
+        private System.Windows.Forms.RichTextBox outputData;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button jsonSaver;
     }
 }
 
