@@ -109,122 +109,132 @@
             // 
             // num1
             // 
+            this.num1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num1.Location = new System.Drawing.Point(3, 3);
             this.num1.Name = "num1";
-            this.num1.Size = new System.Drawing.Size(106, 40);
+            this.num1.Size = new System.Drawing.Size(106, 63);
             this.num1.TabIndex = 0;
             this.num1.Text = "1";
-            this.num1.UseVisualStyleBackColor = true;
+            this.num1.UseVisualStyleBackColor = false;
             this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
             // num2
             // 
+            this.num2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num2.Location = new System.Drawing.Point(115, 3);
             this.num2.Name = "num2";
-            this.num2.Size = new System.Drawing.Size(106, 40);
+            this.num2.Size = new System.Drawing.Size(106, 63);
             this.num2.TabIndex = 1;
             this.num2.Text = "2";
-            this.num2.UseVisualStyleBackColor = true;
+            this.num2.UseVisualStyleBackColor = false;
             this.num2.Click += new System.EventHandler(this.num2_Click);
             // 
             // num3
             // 
+            this.num3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num3.Location = new System.Drawing.Point(227, 3);
             this.num3.Name = "num3";
-            this.num3.Size = new System.Drawing.Size(106, 40);
+            this.num3.Size = new System.Drawing.Size(106, 63);
             this.num3.TabIndex = 2;
             this.num3.Text = "3";
-            this.num3.UseVisualStyleBackColor = true;
+            this.num3.UseVisualStyleBackColor = false;
             this.num3.Click += new System.EventHandler(this.num3_Click);
             // 
             // num4
             // 
+            this.num4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num4.Location = new System.Drawing.Point(3, 72);
             this.num4.Name = "num4";
-            this.num4.Size = new System.Drawing.Size(106, 40);
+            this.num4.Size = new System.Drawing.Size(106, 63);
             this.num4.TabIndex = 3;
             this.num4.Text = "4";
-            this.num4.UseVisualStyleBackColor = true;
+            this.num4.UseVisualStyleBackColor = false;
             this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num5
             // 
+            this.num5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num5.Location = new System.Drawing.Point(115, 72);
             this.num5.Name = "num5";
-            this.num5.Size = new System.Drawing.Size(106, 40);
+            this.num5.Size = new System.Drawing.Size(106, 63);
             this.num5.TabIndex = 4;
             this.num5.Text = "5";
-            this.num5.UseVisualStyleBackColor = true;
+            this.num5.UseVisualStyleBackColor = false;
             this.num5.Click += new System.EventHandler(this.num5_Click);
             // 
             // num6
             // 
+            this.num6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num6.Location = new System.Drawing.Point(227, 72);
             this.num6.Name = "num6";
-            this.num6.Size = new System.Drawing.Size(106, 40);
+            this.num6.Size = new System.Drawing.Size(106, 63);
             this.num6.TabIndex = 5;
             this.num6.Text = "6";
-            this.num6.UseVisualStyleBackColor = true;
+            this.num6.UseVisualStyleBackColor = false;
             this.num6.Click += new System.EventHandler(this.num6_Click);
             // 
             // num7
             // 
+            this.num7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num7.Location = new System.Drawing.Point(3, 141);
             this.num7.Name = "num7";
-            this.num7.Size = new System.Drawing.Size(106, 40);
+            this.num7.Size = new System.Drawing.Size(106, 63);
             this.num7.TabIndex = 6;
             this.num7.Text = "7";
-            this.num7.UseVisualStyleBackColor = true;
+            this.num7.UseVisualStyleBackColor = false;
             this.num7.Click += new System.EventHandler(this.num7_Click);
             // 
             // num8
             // 
+            this.num8.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num8.Location = new System.Drawing.Point(115, 141);
             this.num8.Name = "num8";
-            this.num8.Size = new System.Drawing.Size(106, 40);
+            this.num8.Size = new System.Drawing.Size(106, 63);
             this.num8.TabIndex = 7;
             this.num8.Text = "8";
-            this.num8.UseVisualStyleBackColor = true;
+            this.num8.UseVisualStyleBackColor = false;
             this.num8.Click += new System.EventHandler(this.num8_Click);
             // 
             // num9
             // 
+            this.num9.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num9.Location = new System.Drawing.Point(227, 141);
             this.num9.Name = "num9";
-            this.num9.Size = new System.Drawing.Size(106, 40);
+            this.num9.Size = new System.Drawing.Size(106, 63);
             this.num9.TabIndex = 8;
             this.num9.Text = "9";
-            this.num9.UseVisualStyleBackColor = true;
+            this.num9.UseVisualStyleBackColor = false;
             this.num9.Click += new System.EventHandler(this.num9_Click);
             // 
             // num0
             // 
+            this.num0.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.num0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.num0.Location = new System.Drawing.Point(115, 210);
             this.num0.Name = "num0";
-            this.num0.Size = new System.Drawing.Size(106, 40);
+            this.num0.Size = new System.Drawing.Size(106, 63);
             this.num0.TabIndex = 9;
             this.num0.Text = "0";
-            this.num0.UseVisualStyleBackColor = true;
+            this.num0.UseVisualStyleBackColor = false;
             this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
             // clearButton
@@ -233,7 +243,7 @@
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.clearButton.Location = new System.Drawing.Point(339, 3);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(106, 40);
+            this.clearButton.Size = new System.Drawing.Size(106, 63);
             this.clearButton.TabIndex = 12;
             this.clearButton.Text = "C";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -245,7 +255,7 @@
             this.equal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.equal.Location = new System.Drawing.Point(339, 72);
             this.equal.Name = "equal";
-            this.equal.Size = new System.Drawing.Size(106, 40);
+            this.equal.Size = new System.Drawing.Size(106, 63);
             this.equal.TabIndex = 13;
             this.equal.Text = "=";
             this.equal.UseVisualStyleBackColor = true;
@@ -257,7 +267,7 @@
             this.sinButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.sinButton.Location = new System.Drawing.Point(339, 141);
             this.sinButton.Name = "sinButton";
-            this.sinButton.Size = new System.Drawing.Size(106, 40);
+            this.sinButton.Size = new System.Drawing.Size(106, 63);
             this.sinButton.TabIndex = 14;
             this.sinButton.Text = "sin";
             this.sinButton.UseVisualStyleBackColor = true;
@@ -269,7 +279,7 @@
             this.cosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cosButton.Location = new System.Drawing.Point(339, 210);
             this.cosButton.Name = "cosButton";
-            this.cosButton.Size = new System.Drawing.Size(106, 40);
+            this.cosButton.Size = new System.Drawing.Size(106, 63);
             this.cosButton.TabIndex = 15;
             this.cosButton.Text = "cos";
             this.cosButton.UseVisualStyleBackColor = true;
@@ -281,7 +291,7 @@
             this.tanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tanButton.Location = new System.Drawing.Point(339, 279);
             this.tanButton.Name = "tanButton";
-            this.tanButton.Size = new System.Drawing.Size(106, 40);
+            this.tanButton.Size = new System.Drawing.Size(106, 65);
             this.tanButton.TabIndex = 16;
             this.tanButton.Text = "tan";
             this.tanButton.UseVisualStyleBackColor = true;
@@ -293,7 +303,7 @@
             this.radical.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radical.Location = new System.Drawing.Point(3, 279);
             this.radical.Name = "radical";
-            this.radical.Size = new System.Drawing.Size(106, 40);
+            this.radical.Size = new System.Drawing.Size(106, 65);
             this.radical.TabIndex = 10;
             this.radical.Text = "√x";
             this.radical.UseVisualStyleBackColor = true;
@@ -305,7 +315,7 @@
             this.point.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.point.Location = new System.Drawing.Point(227, 279);
             this.point.Name = "point";
-            this.point.Size = new System.Drawing.Size(106, 40);
+            this.point.Size = new System.Drawing.Size(106, 65);
             this.point.TabIndex = 17;
             this.point.Text = ",";
             this.point.UseVisualStyleBackColor = true;
@@ -317,7 +327,7 @@
             this.ySquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ySquare.Location = new System.Drawing.Point(115, 279);
             this.ySquare.Name = "ySquare";
-            this.ySquare.Size = new System.Drawing.Size(106, 40);
+            this.ySquare.Size = new System.Drawing.Size(106, 65);
             this.ySquare.TabIndex = 18;
             this.ySquare.Text = "x²";
             this.ySquare.UseVisualStyleBackColor = true;
@@ -329,7 +339,7 @@
             this.leftBracket.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.leftBracket.Location = new System.Drawing.Point(3, 210);
             this.leftBracket.Name = "leftBracket";
-            this.leftBracket.Size = new System.Drawing.Size(106, 40);
+            this.leftBracket.Size = new System.Drawing.Size(106, 63);
             this.leftBracket.TabIndex = 19;
             this.leftBracket.Text = "(";
             this.leftBracket.UseVisualStyleBackColor = true;
@@ -341,7 +351,7 @@
             this.rightBracket.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rightBracket.Location = new System.Drawing.Point(227, 210);
             this.rightBracket.Name = "rightBracket";
-            this.rightBracket.Size = new System.Drawing.Size(106, 40);
+            this.rightBracket.Size = new System.Drawing.Size(106, 63);
             this.rightBracket.TabIndex = 20;
             this.rightBracket.Text = ")";
             this.rightBracket.UseVisualStyleBackColor = true;

@@ -43,7 +43,9 @@
             this.addData = new System.Windows.Forms.Button();
             this.outputData = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.jsonSaver = new System.Windows.Forms.Button();
+            this.xmlSaver = new System.Windows.Forms.Button();
+            this.ownerInfButton = new System.Windows.Forms.Button();
+            this.xmlReader = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBalance)).BeginInit();
             this.SuspendLayout();
@@ -169,7 +171,7 @@
             // 
             // addData
             // 
-            this.addData.Location = new System.Drawing.Point(12, 451);
+            this.addData.Location = new System.Drawing.Point(12, 469);
             this.addData.Name = "addData";
             this.addData.Size = new System.Drawing.Size(202, 43);
             this.addData.TabIndex = 9;
@@ -194,22 +196,44 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Дата создания счета:";
             // 
-            // jsonSaver
+            // xmlSaver
             // 
-            this.jsonSaver.Location = new System.Drawing.Point(339, 500);
-            this.jsonSaver.Name = "jsonSaver";
-            this.jsonSaver.Size = new System.Drawing.Size(202, 23);
-            this.jsonSaver.TabIndex = 12;
-            this.jsonSaver.Text = "Сохранение инфорации в JSON";
-            this.jsonSaver.UseVisualStyleBackColor = true;
-            this.jsonSaver.Click += new System.EventHandler(this.jsonSaver_Click);
+            this.xmlSaver.Location = new System.Drawing.Point(339, 500);
+            this.xmlSaver.Name = "xmlSaver";
+            this.xmlSaver.Size = new System.Drawing.Size(202, 23);
+            this.xmlSaver.TabIndex = 12;
+            this.xmlSaver.Text = "Сохранение инфорации в  XML";
+            this.xmlSaver.UseVisualStyleBackColor = true;
+            this.xmlSaver.Click += new System.EventHandler(this.xmlSaver_Click);
+            // 
+            // ownerInfButton
+            // 
+            this.ownerInfButton.Location = new System.Drawing.Point(12, 593);
+            this.ownerInfButton.Name = "ownerInfButton";
+            this.ownerInfButton.Size = new System.Drawing.Size(202, 37);
+            this.ownerInfButton.TabIndex = 13;
+            this.ownerInfButton.Text = "Заполнить информацию о владельце";
+            this.ownerInfButton.UseVisualStyleBackColor = true;
+            this.ownerInfButton.Click += new System.EventHandler(this.ownerInfButton_Click);
+            // 
+            // xmlReader
+            // 
+            this.xmlReader.Location = new System.Drawing.Point(339, 530);
+            this.xmlReader.Name = "xmlReader";
+            this.xmlReader.Size = new System.Drawing.Size(202, 23);
+            this.xmlReader.TabIndex = 14;
+            this.xmlReader.Text = "Чтение информации из XML";
+            this.xmlReader.UseVisualStyleBackColor = true;
+            this.xmlReader.Click += new System.EventHandler(this.xmlReader_Click);
             // 
             // accountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
-            this.Controls.Add(this.jsonSaver);
+            this.Controls.Add(this.xmlReader);
+            this.Controls.Add(this.ownerInfButton);
+            this.Controls.Add(this.xmlSaver);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.outputData);
             this.Controls.Add(this.addData);
@@ -249,7 +273,9 @@
         private System.Windows.Forms.Button addData;
         private System.Windows.Forms.RichTextBox outputData;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button jsonSaver;
+        private System.Windows.Forms.Button xmlSaver;
+        private System.Windows.Forms.Button ownerInfButton;
+        private System.Windows.Forms.Button xmlReader;
     }
 }
 
