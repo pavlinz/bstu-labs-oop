@@ -16,7 +16,7 @@ namespace Lab05
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new accountForm());
+            Application.Run(new AccountForm());
         }
     }
 }

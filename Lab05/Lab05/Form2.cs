@@ -1,45 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab05
 {
     public partial class Form2 : Form
     {
-        public string AccountNumber
-        {
-            get { return dataGridView.Rows[0].Cells["AccNumber"].Value.ToString(); }
-            set { dataGridView.Rows[0].Cells["AccNumber"].Value = value; }
-        }
-
-        public string TypeDP
-        {
-            get { return dataGridView.Rows[0].Cells["TypeOfDeposit"].Value.ToString(); }
-            set { dataGridView.Rows[0].Cells["TypeOfDeposit"].Value = value; }
-        }
-
-        public string AccBalance
-        {
-            get { return dataGridView.Rows[0].Cells["Balance"].Value.ToString(); }
-            set { dataGridView.Rows[0].Cells["Balance"].Value = value; }
-        }
+        public AccountForm accForm;
 
         public Form2()
         {
             InitializeComponent();
         }
 
+        public Form2(AccountForm accountForm)
+        {
+            accForm = accountForm;
+            InitializeComponent();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView.Rows[0].Cells["ClientName"].Value = clientNameBox.Text;
-            dataGridView.Rows[0].Cells["brithday"].Value = brithdayPicker.Text;
-            dataGridView.Rows[0].Cells["Tel"].Value = telBox.Text;
+            accForm.acc.Number = accForm.accountNumberField;
+            accForm.FullNameGlobalField = clientNameBox.Text;
+            accForm.DateOfBitrhGlobalField = brithdayPicker.Text;
+            accForm.TelGlobalField = telBox.Text;
+
+            accForm.list.Add(accForm.acc);
+            
+            clientNameBox.Clear();
+            telBox.Clear();
+        }
+
+        private void outputData_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < accForm.list.Count; i++)
+            {
+                int rowNumber = dataGridView.Rows.Add();
+                dataGridView.Rows[rowNumber].Cells["ClientName"].Value = accForm.acc.owner.FullName;
+                dataGridView.Rows[rowNumber].Cells["brithday"].Value = accForm.acc.owner.DateOfBitrh;
+                dataGridView.Rows[rowNumber].Cells["Tel"].Value = accForm.acc.owner.Tel;
+                dataGridView.Rows[rowNumber].Cells["AccNumber"].Value = accForm.acc.Number;
+                dataGridView.Rows[rowNumber].Cells["TypeOfDeposit"].Value = accForm.acc.TypeOfDeposit;
+                dataGridView.Rows[rowNumber].Cells["Balance"].Value = accForm.acc.Balance;
+            }
         }
     }
 }

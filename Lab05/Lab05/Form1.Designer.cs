@@ -1,6 +1,6 @@
 ﻿namespace Lab05
 {
-    partial class accountForm
+    partial class AccountForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

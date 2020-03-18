@@ -8,6 +8,13 @@ namespace Lab05
     [XmlType("account")]
     public class Account
     {
+        public Owner owner;
+
+        public Account()
+        {
+            owner = new Owner();
+        }
+
         [XmlElement(ElementName = "Number")]
         public string Number { get; set; }
 

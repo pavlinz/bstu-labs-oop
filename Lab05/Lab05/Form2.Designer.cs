@@ -35,13 +35,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.telBox = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brithday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AccNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TypeOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.outputData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,20 +105,10 @@
             this.AccNumber,
             this.TypeOfDeposit,
             this.Balance});
-            this.dataGridView.Location = new System.Drawing.Point(15, 248);
+            this.dataGridView.Location = new System.Drawing.Point(15, 243);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(609, 278);
             this.dataGridView.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 47);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Добавить информацию в БД";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ClientName
             // 
@@ -149,11 +140,32 @@
             this.Balance.HeaderText = "Баланс";
             this.Balance.Name = "Balance";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(15, 180);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 47);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Добавить информацию в БД";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // outputData
+            // 
+            this.outputData.Location = new System.Drawing.Point(240, 180);
+            this.outputData.Name = "outputData";
+            this.outputData.Size = new System.Drawing.Size(204, 47);
+            this.outputData.TabIndex = 8;
+            this.outputData.Text = "Вывести данные в таблицу";
+            this.outputData.UseVisualStyleBackColor = true;
+            this.outputData.Click += new System.EventHandler(this.outputData_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
+            this.Controls.Add(this.outputData);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.telBox);
@@ -186,5 +198,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AccNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn TypeOfDeposit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Balance;
+        private System.Windows.Forms.Button outputData;
     }
 }
