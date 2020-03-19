@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.clientNameBox = new System.Windows.Forms.TextBox();
-            this.brithdayPicker = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.telBox = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brithday = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,59 +35,9 @@
             this.AccNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TypeOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.outputData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ФИО";
-            // 
-            // clientNameBox
-            // 
-            this.clientNameBox.Location = new System.Drawing.Point(15, 25);
-            this.clientNameBox.Name = "clientNameBox";
-            this.clientNameBox.Size = new System.Drawing.Size(301, 20);
-            this.clientNameBox.TabIndex = 1;
-            // 
-            // brithdayPicker
-            // 
-            this.brithdayPicker.Location = new System.Drawing.Point(15, 76);
-            this.brithdayPicker.Name = "brithdayPicker";
-            this.brithdayPicker.Size = new System.Drawing.Size(200, 20);
-            this.brithdayPicker.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Дата рождения";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Телефон";
-            // 
-            // telBox
-            // 
-            this.telBox.Location = new System.Drawing.Point(15, 133);
-            this.telBox.Mask = "(999) 000-0000";
-            this.telBox.Name = "telBox";
-            this.telBox.Size = new System.Drawing.Size(200, 20);
-            this.telBox.TabIndex = 5;
             // 
             // dataGridView
             // 
@@ -105,7 +49,7 @@
             this.AccNumber,
             this.TypeOfDeposit,
             this.Balance});
-            this.dataGridView.Location = new System.Drawing.Point(15, 243);
+            this.dataGridView.Location = new System.Drawing.Point(15, 12);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(609, 278);
             this.dataGridView.TabIndex = 6;
@@ -140,19 +84,9 @@
             this.Balance.HeaderText = "Баланс";
             this.Balance.Name = "Balance";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 47);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Добавить информацию в БД";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // outputData
             // 
-            this.outputData.Location = new System.Drawing.Point(240, 180);
+            this.outputData.Location = new System.Drawing.Point(218, 314);
             this.outputData.Name = "outputData";
             this.outputData.Size = new System.Drawing.Size(204, 47);
             this.outputData.TabIndex = 8;
@@ -166,32 +100,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
             this.Controls.Add(this.outputData);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.telBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.brithdayPicker);
-            this.Controls.Add(this.clientNameBox);
-            this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Owner";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox clientNameBox;
-        private System.Windows.Forms.DateTimePicker brithdayPicker;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox telBox;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClientName;
         private System.Windows.Forms.DataGridViewTextBoxColumn brithday;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tel;

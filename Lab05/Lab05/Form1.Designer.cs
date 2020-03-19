@@ -41,11 +41,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.checkSms = new System.Windows.Forms.CheckBox();
             this.addData = new System.Windows.Forms.Button();
-            this.outputData = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.xmlSaver = new System.Windows.Forms.Button();
             this.ownerInfButton = new System.Windows.Forms.Button();
-            this.xmlReader = new System.Windows.Forms.Button();
+            this.telBox = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.brithdayPicker = new System.Windows.Forms.DateTimePicker();
+            this.clientNameBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBalance)).BeginInit();
             this.SuspendLayout();
@@ -179,14 +183,6 @@
             this.addData.UseVisualStyleBackColor = true;
             this.addData.Click += new System.EventHandler(this.addData_Click);
             // 
-            // outputData
-            // 
-            this.outputData.Location = new System.Drawing.Point(305, 29);
-            this.outputData.Name = "outputData";
-            this.outputData.Size = new System.Drawing.Size(274, 465);
-            this.outputData.TabIndex = 10;
-            this.outputData.Text = "";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -198,7 +194,7 @@
             // 
             // xmlSaver
             // 
-            this.xmlSaver.Location = new System.Drawing.Point(339, 500);
+            this.xmlSaver.Location = new System.Drawing.Point(12, 583);
             this.xmlSaver.Name = "xmlSaver";
             this.xmlSaver.Size = new System.Drawing.Size(202, 23);
             this.xmlSaver.TabIndex = 12;
@@ -208,34 +204,77 @@
             // 
             // ownerInfButton
             // 
-            this.ownerInfButton.Location = new System.Drawing.Point(12, 593);
+            this.ownerInfButton.Location = new System.Drawing.Point(12, 528);
             this.ownerInfButton.Name = "ownerInfButton";
             this.ownerInfButton.Size = new System.Drawing.Size(202, 37);
             this.ownerInfButton.TabIndex = 13;
-            this.ownerInfButton.Text = "Заполнить информацию о владельце";
+            this.ownerInfButton.Text = "Таблица";
             this.ownerInfButton.UseVisualStyleBackColor = true;
             this.ownerInfButton.Click += new System.EventHandler(this.ownerInfButton_Click);
             // 
-            // xmlReader
+            // telBox
             // 
-            this.xmlReader.Location = new System.Drawing.Point(339, 530);
-            this.xmlReader.Name = "xmlReader";
-            this.xmlReader.Size = new System.Drawing.Size(202, 23);
-            this.xmlReader.TabIndex = 14;
-            this.xmlReader.Text = "Чтение информации из XML";
-            this.xmlReader.UseVisualStyleBackColor = true;
-            this.xmlReader.Click += new System.EventHandler(this.xmlReader_Click);
+            this.telBox.Location = new System.Drawing.Point(257, 137);
+            this.telBox.Mask = "(999) 000-0000";
+            this.telBox.Name = "telBox";
+            this.telBox.Size = new System.Drawing.Size(200, 20);
+            this.telBox.TabIndex = 20;
             // 
-            // accountForm
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(254, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Телефон";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(254, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Дата рождения";
+            // 
+            // brithdayPicker
+            // 
+            this.brithdayPicker.Location = new System.Drawing.Point(257, 80);
+            this.brithdayPicker.Name = "brithdayPicker";
+            this.brithdayPicker.Size = new System.Drawing.Size(200, 20);
+            this.brithdayPicker.TabIndex = 17;
+            // 
+            // clientNameBox
+            // 
+            this.clientNameBox.Location = new System.Drawing.Point(257, 29);
+            this.clientNameBox.Name = "clientNameBox";
+            this.clientNameBox.Size = new System.Drawing.Size(301, 20);
+            this.clientNameBox.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(254, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "ФИО";
+            // 
+            // AccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
-            this.Controls.Add(this.xmlReader);
+            this.Controls.Add(this.telBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.brithdayPicker);
+            this.Controls.Add(this.clientNameBox);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.ownerInfButton);
             this.Controls.Add(this.xmlSaver);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.outputData);
             this.Controls.Add(this.addData);
             this.Controls.Add(this.checkSms);
             this.Controls.Add(this.label3);
@@ -246,7 +285,7 @@
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.accNumberField);
             this.Controls.Add(this.label1);
-            this.Name = "accountForm";
+            this.Name = "AccountForm";
             this.Text = "Счет";
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
@@ -271,11 +310,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkSms;
         private System.Windows.Forms.Button addData;
-        private System.Windows.Forms.RichTextBox outputData;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button xmlSaver;
         private System.Windows.Forms.Button ownerInfButton;
-        private System.Windows.Forms.Button xmlReader;
+        private System.Windows.Forms.MaskedTextBox telBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker brithdayPicker;
+        private System.Windows.Forms.TextBox clientNameBox;
+        private System.Windows.Forms.Label label7;
     }
 }
 

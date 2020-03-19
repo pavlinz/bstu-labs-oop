@@ -38,7 +38,6 @@ namespace Lab05
             InitializeComponent();
             this.addData.Enabled = false;
             this.xmlSaver.Enabled = false;
-            this.xmlReader.Enabled = false;
 
             this.accNumberField.Tag = false;
             this.groupBox.Tag = false;
@@ -129,6 +128,33 @@ namespace Lab05
             if (checkSms.Checked)
                 acc.smsAlert = true;
 
+            acc.owner.FullName = clientNameBox.Text;
+            acc.owner.DateOfBitrh = brithdayPicker.Text;
+            acc.owner.Tel = telBox.Text;
+
+            Owner ownerObj = new Owner
+            {
+                FullName = acc.owner.FullName,
+                DateOfBitrh = acc.owner.DateOfBitrh,
+                Tel = acc.owner.Tel
+            };
+            list.Add(new Account
+            {
+                Number = acc.Number,
+                TypeOfDeposit = acc.TypeOfDeposit,
+                Balance = acc.Balance,
+                CreatingDate = acc.CreatingDate,
+                smsAlert = acc.smsAlert,
+                owner = ownerObj
+            });
+
+            accNumberField.Clear();
+            clientNameBox.Clear();
+            telBox.Clear();
+
+
+
+
             //string output;
 
             //output = "Номер счета: " + accNumberField.Text + "\n";
@@ -155,17 +181,17 @@ namespace Lab05
 
         private void xmlReader_Click(object sender, EventArgs e)
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(Account));
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Account>));
 
             using (FileStream fs = new FileStream("accounts.xml", FileMode.Open))
             {
                 Account newPerson = (Account)formatter.Deserialize(fs);
 
-                outputData.Clear();
+                //outputData.Clear();
 
-                outputData.Text = $"Номер: {acc.Number} \nТип вклада: {acc.TypeOfDeposit} \n" +
-                                  $"Баланс: {acc.Balance} \nДата создания: {acc.CreatingDate} \n" +
-                                  $"Смс оповещение: {acc.smsAlert}";
+                //outputData.Text = $"Номер: {acc.Number} \nТип вклада: {acc.TypeOfDeposit} \n" +
+                                  //$"Баланс: {acc.Balance} \nДата создания: {acc.CreatingDate} \n" +
+                                  //$"Смс оповещение: {acc.smsAlert}";
             }
         }
 
@@ -177,14 +203,24 @@ namespace Lab05
 
         private void xmlSaver_Click(object sender, EventArgs e)
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(Account));
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Account>));
 
             using (FileStream fs = new FileStream("accounts.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, acc);
+                formatter.Serialize(fs, list);
             }
+        }
 
-            xmlReader.Enabled = true;
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            acc.Number = null;
+            acc.CreatingDate = null;
+            acc.Balance = 0;
+            acc.TypeOfDeposit = null;
+            acc.smsAlert = false;
+            acc.owner.FullName = null;
+            acc.owner.DateOfBitrh = null;
+            acc.owner.Tel = null;
         }
     }
 }
