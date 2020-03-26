@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static Lab05.AccountForm;
 
@@ -34,10 +35,23 @@ namespace Lab05
                     AddDataToTable(selectedItems);
                     break;
                 case (SearchType)2:
-                    selectedItems = from item in accForm.list
-                                        where item.owner.FullName == searchBox.Text
-                                        select item;
-                    AddDataToTable(selectedItems);
+                    //selectedItems = from item in accForm.list
+                    //                    where item.owner.FullName == searchBox.Text
+                    //                    select item;
+                    List<Account> selectedAccount = new List<Account>();
+                    if (searchBox.Text != "")
+                    {
+                        string template = $"^[{searchBox.Text}]+";
+                        Regex _regex = new Regex(template);
+                        foreach (Account item in accForm.list)
+                        {
+                            if(_regex.IsMatch(item.owner.FullName))
+                            {
+                                selectedAccount.Add(item);
+                            }
+                        }
+                        AddDataToTable(selectedAccount);
+                    }
                     break;
                 case (SearchType)3:
                     selectedItems = from item in accForm.list
