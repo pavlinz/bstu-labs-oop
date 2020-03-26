@@ -36,6 +36,7 @@
             this.TypeOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.outputData = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +95,22 @@
             this.outputData.UseVisualStyleBackColor = true;
             this.outputData.Click += new System.EventHandler(this.outputData_Click);
             // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(218, 389);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(204, 45);
+            this.clearButton.TabIndex = 9;
+            this.clearButton.Text = "Очистить";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 660);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.outputData);
             this.Controls.Add(this.dataGridView);
             this.Name = "Form2";
@@ -117,5 +129,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TypeOfDeposit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Balance;
         private System.Windows.Forms.Button outputData;
+        private System.Windows.Forms.Button clearButton;
     }
 }

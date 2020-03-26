@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Serialization;
 
 namespace Lab05
@@ -16,6 +17,7 @@ namespace Lab05
         }
 
         [XmlElement(ElementName = "Number")]
+        [RegularExpression(@"[0-9]{6}", ErrorMessage = "Неверный формат счета")]
         public string Number { get; set; }
 
         [XmlElement(ElementName = "Type Of Deposit")]
@@ -29,6 +31,9 @@ namespace Lab05
 
         [XmlElement(ElementName = "sms Alert")]
         public bool smsAlert { get; set; }
+
+        [Passport]
+        public string Passport { get; set; }
 
         public object Clone()
         {

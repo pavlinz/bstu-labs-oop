@@ -37,5 +37,11 @@ namespace Lab05
                 rowNumber++;
             }
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            dataGridView.Rows.Clear();
+        }
+
     }
 }
