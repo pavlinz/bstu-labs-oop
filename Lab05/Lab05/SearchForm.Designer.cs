@@ -36,7 +36,6 @@
             this.TypeOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.searchView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,23 +90,13 @@
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(288, 20);
             this.searchBox.TabIndex = 1;
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(354, 33);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(196, 23);
-            this.searchButton.TabIndex = 2;
-            this.searchButton.Text = "Поиск";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 377);
-            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.searchView);
             this.Name = "SearchForm";
@@ -128,6 +117,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TypeOfDeposit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Balance;
         private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.Button searchButton;
     }
 }

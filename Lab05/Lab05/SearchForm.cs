@@ -24,49 +24,46 @@ namespace Lab05
             accounts = new List<Account>();
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-            switch (SearchType)
-            {
-                case (SearchType)1:
-                    var selectedItems = from item in accForm.list
-                                 where item.Number == searchBox.Text
-                                 select item;
-                    AddDataToTable(selectedItems);
-                    break;
-                case (SearchType)2:
-                    //selectedItems = from item in accForm.list
-                    //                    where item.owner.FullName == searchBox.Text
-                    //                    select item;
-                    List<Account> selectedAccount = new List<Account>();
-                    if (searchBox.Text != "")
-                    {
-                        string template = $"^[{searchBox.Text}]+";
-                        Regex _regex = new Regex(template);
-                        foreach (Account item in accForm.list)
-                        {
-                            if(_regex.IsMatch(item.owner.FullName))
-                            {
-                                selectedAccount.Add(item);
-                            }
-                        }
-                        AddDataToTable(selectedAccount);
-                    }
-                    break;
-                case (SearchType)3:
-                    selectedItems = from item in accForm.list
-                                    where item.Balance == Convert.ToInt32(searchBox.Text)
-                                    select item;
-                    AddDataToTable(selectedItems);
-                    break;
-                case (SearchType)4:
-                    selectedItems = from item in accForm.list
-                                        where item.TypeOfDeposit == searchBox.Text
-                                        select item;
-                    AddDataToTable(selectedItems);
-                    break;
-            }
-        }
+        //private void searchButton_Click(object sender, EventArgs e)
+        //{
+        //    switch (SearchType)
+        //    {
+        //        case (SearchType)1:
+        //            var selectedItems = from item in accForm.list
+        //                         where item.Number == searchBox.Text
+        //                         select item;
+        //            AddDataToTable(selectedItems);
+        //            break;
+        //        case (SearchType)2:
+        //            List<Account> selectedAccount = new List<Account>();
+        //            if (searchBox.Text != "")
+        //            {
+        //                string template = @"^(\w*\s*)" + searchBox.Text + @"(\w*\s*)";
+        //                Regex _regex = new Regex(template);
+        //                foreach (Account item in accForm.list)
+        //                {
+        //                    if (_regex.IsMatch(item.owner.FullName))
+        //                    {
+        //                        selectedAccount.Add(item);
+        //                    }
+        //                }
+        //                AddDataToTable(selectedAccount);
+        //            }
+        //            break;
+        //        case (SearchType)3:
+        //            selectedItems = from item in accForm.list
+        //                            where item.Balance == Convert.ToInt32(searchBox.Text)
+        //                            select item;
+        //            AddDataToTable(selectedItems);
+        //            break;
+        //        case (SearchType)4:
+        //            selectedItems = from item in accForm.list
+        //                                where item.TypeOfDeposit == searchBox.Text
+        //                                select item;
+        //            AddDataToTable(selectedItems);
+        //            break;
+        //    }
+        //}
 
         private void AddDataToTable(IEnumerable<Account> selectedItems)
         {
@@ -85,6 +82,80 @@ namespace Lab05
                 searchView.Rows[rowNumber].Cells["Balance"].Value = item.Balance;
                 rowNumber++;
             }
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            List<Account> selectedAccount;
+            searchView.Rows.Clear();
+            switch (SearchType)
+            {
+                case (SearchType)1:
+                    selectedAccount = new List<Account>();
+                    if (searchBox.Text != "")
+                    {
+                        string template = @"^" + searchBox.Text + @"\d*";
+                        Regex _regex = new Regex(template);
+                        foreach (Account item in accForm.list)
+                        {
+                            if (_regex.IsMatch(item.Number))
+                            {
+                                selectedAccount.Add(item);
+                            }
+                        }
+                        AddDataToTable(selectedAccount);
+                    }
+                    break;
+                case (SearchType)2:
+                    selectedAccount = new List<Account>();
+                    if (searchBox.Text != "")
+                    {
+                        string template = @"^(\w*\s*)" + searchBox.Text + @"(\w*\s*)";
+                        Regex _regex = new Regex(template);
+                        foreach (Account item in accForm.list)
+                        {
+                            if (_regex.IsMatch(item.owner.FullName))
+                            {
+                                selectedAccount.Add(item);
+                            }
+                        }
+                        AddDataToTable(selectedAccount);
+                    }
+                    break;
+                case (SearchType)3:
+                    selectedAccount = new List<Account>();
+                    if (searchBox.Text != "")
+                    {
+                        string template = @"^" + searchBox.Text + @"\d*";
+                        Regex _regex = new Regex(template);
+                        foreach (Account item in accForm.list)
+                        {
+                            if (_regex.IsMatch(Convert.ToString(item.Balance)))
+                            {
+                                selectedAccount.Add(item);
+                            }
+                        }
+                        AddDataToTable(selectedAccount);
+                    }
+                    break;
+                case (SearchType)4:
+                    selectedAccount = new List<Account>();
+                    if (searchBox.Text != "")
+                    {
+                        string template = @"^(\w*\s*)" + searchBox.Text + @"(\w*\s*)";
+                        Regex _regex = new Regex(template);
+                        foreach (Account item in accForm.list)
+                        {
+                            if (_regex.IsMatch(item.TypeOfDeposit))
+                            {
+                                selectedAccount.Add(item);
+                            }
+                        }
+                        AddDataToTable(selectedAccount);
+                    }
+                    break;
+            }
+            
         }
     }
 }
