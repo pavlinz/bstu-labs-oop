@@ -1,0 +1,17 @@
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.exe.config
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.exe
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.pdb
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csprojAssemblyReference.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\App.g.cs
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8_MarkupCompile.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8_MarkupCompile.lref
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.g.resources
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.Properties.Resources.resources
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csproj.GenerateResource.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csproj.CoreCompileInputs.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.exe
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.pdb
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\MainWindow.g.cs
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\MainWindow.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\AddWindow.g.cs
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\AddWindow.baml
