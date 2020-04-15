@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab7_8"
         mc:Ignorable="d"
-        Title="Todolik" Height="660" Width="1011.5">
+        Title="Todolik" Height="660" Width="1031" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
-            <Button Command="{Binding AddWindowCommand}" Height="25" Width="100" Content="Add" />
+            <Button Command="{Binding AddWindowCommand}" Content="Add" Height="25" Width="100"/>
+            <Button Command="{Binding }" Content="Edit" Height="25" Width="100"/>
+            <Button Command="{Binding DeleteSelectedTasks}" Content="Delete" Width="100" Height="25"/>
         </Menu>
-        <DataGrid x:Name="tasksGrid" AutoGenerateColumns="False" Margin="0,25,0,0" FontWeight="Bold">
+        <DataGrid x:Name="tasksGrid" AutoGenerateColumns="False" Margin="0,25,0,0" FontWeight="Bold" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Header="Done" Width="100"/>
+                <DataGridCheckBoxColumn Header="Done" Width="100" Binding="{Binding Path=IsDone}"/>
                 <DataGridTextColumn Header="Title" Width="300" Binding="{Binding Path=Title}"/>
                 <DataGridTextColumn Header="Priority" Width="200" Binding="{Binding Path=TaskPriority}"/>
                 <DataGridTextColumn Header="Category" Width="200" Binding="{Binding Path=TaskCategory}"/>

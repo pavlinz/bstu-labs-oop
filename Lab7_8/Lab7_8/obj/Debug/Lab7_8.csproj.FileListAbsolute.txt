@@ -15,3 +15,7 @@ D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\MainWindow.baml
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\AddWindow.g.cs
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\AddWindow.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Newtonsoft.Json.xml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csproj.CopyComplete
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\App.baml
