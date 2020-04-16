@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab7_8"
         mc:Ignorable="d"
-        Title="New task" Height="278.518" Width="430.666" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Todolik" Height="278.518" Width="430.666" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\Assets\ovni_alien_invader_space_galaxia_univers_abducted_man_icon_141227.ico">
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal">
