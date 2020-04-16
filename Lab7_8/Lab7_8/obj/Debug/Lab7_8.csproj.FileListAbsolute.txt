@@ -22,3 +22,5 @@ D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csprojAssemblyReference.cache
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Resources\lang.ru-RU.baml
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Resources\lang.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\SortWindow.g.cs
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\SortWindow.baml

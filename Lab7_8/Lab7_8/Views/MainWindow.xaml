@@ -10,7 +10,7 @@
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem x:Name="menuLanguage" Header="Lang"/>
             <Button Command="{Binding AddWindowCommand}" Content="Add" Height="25" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
-            <Button Content="Edit" Height="25" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button Command="{Binding SortTaskCommand}" Content="Sort" Height="25" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
             <Button Command="{Binding DeleteSelectedTasks}" Content="Delete" Width="100" Height="25" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </Menu>
         <DataGrid x:Name="tasksGrid" Style="{StaticResource mainGridStyle}" AutoGenerateColumns="False" Margin="0,25,0,0" FontWeight="Bold" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserSortColumns="False">

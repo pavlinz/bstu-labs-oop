@@ -1,5 +1,6 @@
 ﻿using Lab7_8.Elements;
 using Lab7_8.Services;
+using Lab7_8.Views;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -21,7 +22,7 @@ namespace Lab7_8.ViewModels
         public ICommand AddWindowCommand { get; set; }
         public ICommand AddNewTask { get; set; }
         public ICommand DeleteSelectedTasks { get; set; }
-        public ICommand EditTaskCommand { get; set; }
+        public ICommand SortTaskCommand { get; set; }
         #endregion
 
         public MainViewModel(MainWindow mainWindow)
@@ -42,7 +43,7 @@ namespace Lab7_8.ViewModels
             AddWindowCommand = new Command(createAddWindow, canExecuteMethod);
             AddNewTask = new Command(saveNewTask, canExecuteMethod);
             DeleteSelectedTasks = new Command(deleteSelectedTasks, canExecuteMethod);
-            EditTaskCommand = new Command(editTask, canExecuteMethod);
+            SortTaskCommand = new Command(createSortWindow, canExecuteMethod);
 
             mainWindow.tasksGrid.ItemsSource = Tasks;
             _mainWindow = mainWindow;
@@ -80,10 +81,12 @@ namespace Lab7_8.ViewModels
             _addWindow.Show();
         }
 
-        private void editTask(object parameter)
+        private void createSortWindow(object parameter)
         {
-            
+            SortWindow sortWindow = new SortWindow(Tasks);
+            sortWindow.Show();
         }
+
         #endregion
 
 

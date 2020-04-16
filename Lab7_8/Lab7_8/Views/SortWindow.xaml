@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lab7_8.Views.SortWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab7_8.Views"
+        mc:Ignorable="d"
+        Title="Todolik" Height="460" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\Assets\ovni_alien_invader_space_galaxia_univers_abducted_man_icon_141227.ico">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <GroupBox Name="categoryGB" Header="Select a category" Height="209">
+                <StackPanel>
+                    <RadioButton Name="houseRB" Content="House"  Margin="15"/>
+                    <RadioButton Name="familyRB" Margin="15" Content="Family"/>
+                    <RadioButton Name="studyRB" Margin="15" Content="Study"/>
+                    <RadioButton Name="workRB" Margin="15" Content="Work"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Name="priorityGB" Header="Select priority" Height="191">
+                <StackPanel>
+                    <RadioButton Name="highRB" Content="High"  Margin="15"/>
+                    <RadioButton Name="mediumRB" Margin="15" Content="Medium"/>
+                    <RadioButton Name="lowRB" Margin="15" Content="Low"/>
+                </StackPanel>
+            </GroupBox>
+            <Button Name="resetBtn" Content="Reset" Click="ResetBtn_Click" Height="21"/>
+        </StackPanel>
+        <DataGrid Grid.Column="1" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="592"
+                  x:Name="tasksGrid" Style="{StaticResource mainGridStyle}" AutoGenerateColumns="False" FontWeight="Bold" 
+                  CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserSortColumns="False">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="{DynamicResource m_State}" Width="50" Binding="{Binding Path=IsDone}"/>
+                <DataGridTextColumn Header="{DynamicResource m_Title}" Width="140" Binding="{Binding Path=Title}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Priority}" Width="140" Binding="{Binding Path=TaskPriority}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Category}" Width="140" Binding="{Binding Path=TaskCategory}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Periodicity}" Width="140" Binding="{Binding Path=Periodicity}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
