@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\App.xaml
-276454746
+5-1591211876
 
 13-139524394
 14-2112173618
-Views\AddWindow.xaml;Views\MainWindow.xaml;
+Resources\lang.ru-RU.xaml;Resources\lang.xaml;Views\AddWindow.xaml;Views\MainWindow.xaml;Views\MainWindowStyles.xaml;
 
 False
 

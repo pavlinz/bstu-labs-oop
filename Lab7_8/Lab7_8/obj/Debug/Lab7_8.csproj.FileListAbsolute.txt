@@ -1,7 +1,6 @@
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.exe.config
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.exe
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Lab7_8.pdb
-D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csprojAssemblyReference.cache
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\App.g.cs
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8_MarkupCompile.cache
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8_MarkupCompile.lref
@@ -19,3 +18,7 @@ D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Newto
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\bin\Debug\Newtonsoft.Json.xml
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csproj.CopyComplete
 D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\App.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Views\MainWindowStyles.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Lab7_8.csprojAssemblyReference.cache
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Resources\lang.ru-RU.baml
+D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\obj\Debug\Resources\lang.baml

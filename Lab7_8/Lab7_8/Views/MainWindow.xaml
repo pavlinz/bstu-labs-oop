@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab7_8"
         mc:Ignorable="d"
-        Title="Todolik" Height="660" Width="1031" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Todolik" Height="660" Width="1031" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="D:\OneDrive\Study\Course_2\2\ООП\Решения\Lab7_8\Lab7_8\Assets\ovni_alien_invader_space_galaxia_univers_abducted_man_icon_141227.ico">
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
-            <Button Command="{Binding AddWindowCommand}" Content="Add" Height="25" Width="100"/>
-            <Button Command="{Binding }" Content="Edit" Height="25" Width="100"/>
-            <Button Command="{Binding DeleteSelectedTasks}" Content="Delete" Width="100" Height="25"/>
+            <MenuItem x:Name="menuLanguage" Header="Lang"/>
+            <Button Command="{Binding AddWindowCommand}" Content="Add" Height="25" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button Content="Edit" Height="25" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button Command="{Binding DeleteSelectedTasks}" Content="Delete" Width="100" Height="25" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </Menu>
-        <DataGrid x:Name="tasksGrid" AutoGenerateColumns="False" Margin="0,25,0,0" FontWeight="Bold" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="tasksGrid" Style="{StaticResource mainGridStyle}" AutoGenerateColumns="False" Margin="0,25,0,0" FontWeight="Bold" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserSortColumns="False">
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Header="Done" Width="100" Binding="{Binding Path=IsDone}"/>
-                <DataGridTextColumn Header="Title" Width="300" Binding="{Binding Path=Title}"/>
-                <DataGridTextColumn Header="Priority" Width="200" Binding="{Binding Path=TaskPriority}"/>
-                <DataGridTextColumn Header="Category" Width="200" Binding="{Binding Path=TaskCategory}"/>
-                <DataGridTextColumn Header="Periodicity" Width="200" Binding="{Binding Path=Periodicity}"/>
+                <DataGridCheckBoxColumn Header="{DynamicResource m_State}" Width="100" Binding="{Binding Path=IsDone}"/>
+                <DataGridTextColumn Header="{DynamicResource m_Title}" Width="300" Binding="{Binding Path=Title}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Priority}" Width="200" Binding="{Binding Path=TaskPriority}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Category}" Width="200" Binding="{Binding Path=TaskCategory}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="{DynamicResource m_Periodicity}" Width="200" Binding="{Binding Path=Periodicity}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
